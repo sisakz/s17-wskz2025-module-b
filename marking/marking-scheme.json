@@ -1,1 +1,382 @@
-{}
+{
+  "totalMark": 22,
+  "wsosSections": {
+    "1": "Work organization and management",
+    "2": "Communication and interpersonal skills",
+    "3": "Design implementation",
+    "4": "Front-end development",
+    "5": "Back-end development"
+  },
+  "subCriterions": [
+    {
+      "name": "Authentication",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "If the user is not authenticated, no page must be accessible",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Sign-in is possible with the demo moderator account",
+          "maxMark": 0.75,
+          "wsosSection": 5,
+          "extraDescription": "Username: olivia@example.com, Password: olivia_123",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Sign-in with invalid credentials is not possible",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "extraDescription": "An error message is displayed, but it is the same for a non-existent username and an incorrect password, so that no extra information is revealed to potential attackers",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Sign-in with phone or email is possible",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "extraDescription": "Demo user phone: +44 7700 900321",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "After sign-in, the user is redirected to the home page",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Header and Home page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "The header contains all required links",
+          "maxMark": 0.75,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0.25 for each missing link",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The header is present on every page except the sign-in page",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The home page contains all required elements",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0.25 for each missing element",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The top viewed adverts section contains only published adverts; the list is sorted by view count in descending order",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Advert counts by status display correct values from the database",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Categories list page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "The page displays the list of categories from the database",
+          "maxMark": 0.75,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The list contains all required fields",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0.25 for each missing field",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The user can create, edit, and delete categories",
+          "maxMark": 1.5,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0.25 for each missing operation",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The user cannot delete a category that has adverts linked to it in any status",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Users list page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "The page displays the list of users from the database",
+          "maxMark": 0.75,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The list contains all required fields",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0.25 for each missing field",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The page has one text field that allows searching by ID, phone number, or email (exact match)",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Adverts list page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "The page displays the list of adverts from the database",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The list can be filtered by status",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The list can be filtered by category",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The list can be filtered by text. The text filter must search across the advert title, description, category name, and author name",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The adverts list displays a label indicating active paid services, if any",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Advert details page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "The page contains all required elements",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0.25 for each missing element",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "An interface for changing the advert status is provided",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Advert status can only be changed within the allowed transitions",
+          "maxMark": 0.75,
+          "wsosSection": 5,
+          "extraDescription": "moderation → published\nmoderation → declined\npublished → declined",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The page displays paid service information, including expired services (type, activation date, validity period)",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "It is possible to enable or disable a paid service for the advert",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Exporting the list of adverts",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "The adverts list can be downloaded as an export_adverts.csv file",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The file contains all required columns",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0.25 for each missing column",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "If filters are applied on the page, only the filtered adverts list is exported",
+          "maxMark": 0.75,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Organization",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Main content is rendered on the server side",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Client-side frameworks may be used for interactive elements (such as dropdowns), but the main content must be server-rendered and work even with JavaScript disabled",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Cross-site scripting (XSS) is not possible",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Inserting HTML elements into forms must not render them. Example: if a title field contains <a href=\"https://google.com\">title</a>, it must be displayed as text, not as a link. The same applies to <script> tags, but modern browsers usually block script injection attempts, so it is easier to test with other tags (e.g. <a>)",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "SQL injection is not possible",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "All queries either use ORM-provided methods or prepared statements. Queries must not use manual parameter concatenation",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The project's database folder contains the database dump (DB_DUMP.sql) and ER diagram (ERD.png)",
+          "maxMark": 0.5,
+          "wsosSection": 2,
+          "extraDescription": "Deduct 0.25 for each missing file",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "All data from the provided CSV files is imported into the database",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    }
+  ]
+}
